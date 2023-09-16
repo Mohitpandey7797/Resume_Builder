@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+           <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/e6/21/5b/e6215bcc-db4a-5d0b-e292-d9ed7160427a/AppIcon-0-1x_U007emarketing-0-4-0-85-220.png/1200x600wa.png" alt="" height="40vh" style="border-radius: 10px;">
+        </div>
+        <div class="navbar-title">Resume Builder</div>
+    </nav>
+    <div class="resume-builder">
+        <h1>Resume Builder</h1>
+        <form id="resume-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="phone">Contact:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            
+            <label for="summary">Summary:</label>
+            <textarea id="summary" name="summary" required></textarea><br>
+            
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" required></textarea><br>
+            
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" required></textarea><br>
+            
+            <button type="submit">Generate Resume</button>
+        </form>
+        
+        <div id="resume-output">
+            <!-- Resume content will be displayed here -->
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
